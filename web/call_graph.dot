@@ -1,0 +1,275 @@
+// Function Calls
+digraph {
+	login_user
+	render
+	login_user -> render
+	redirect
+	login_user -> redirect
+	redirect
+	user_register
+	HttpResponse
+	user_register -> HttpResponse
+	render
+	user_register -> render
+	redirect
+	user_register -> redirect
+	str
+	user_register -> str
+	main
+	render
+	main -> render
+	code_manage
+	render
+	code_manage -> render
+	fault_propogation
+	render
+	fault_propogation -> render
+	history
+	render
+	history -> render
+	search_history
+	render
+	search_history -> render
+	code_add
+	HttpResponse
+	code_add -> HttpResponse
+	render
+	code_add -> render
+	redirect
+	code_add -> redirect
+	str
+	code_add -> str
+	code_update
+	HttpResponse
+	code_update -> HttpResponse
+	render
+	code_update -> render
+	redirect
+	code_update -> redirect
+	str
+	code_update -> str
+	str
+	code_delete
+	HttpResponse
+	code_delete -> HttpResponse
+	redirect
+	code_delete -> redirect
+	redirect
+	str
+	code_delete -> str
+	str
+	history_delete
+	redirect
+	history_delete -> redirect
+	function_dependent
+	analyze_code
+	function_dependent -> analyze_code
+	render
+	function_dependent -> render
+	convert_to_vis_format
+	function_dependent -> convert_to_vis_format
+	history_search
+	render
+	history_search -> render
+	analyze_code
+	isinstance
+	analyze_code -> isinstance
+	isinstance
+	isinstance
+	convert_to_vis_format
+	system
+	render
+	system -> render
+	new_pwd
+	render
+	new_pwd -> render
+	redirect
+	new_pwd -> redirect
+	render
+	op_log
+	reversed
+	op_log -> reversed
+	render
+	op_log -> render
+	log_delete
+	redirect
+	log_delete -> redirect
+	look_code
+	render
+	look_code -> render
+	self_update
+	HttpResponse
+	self_update -> HttpResponse
+	render
+	self_update -> render
+	render
+	str
+	self_update -> str
+	extract_function_features
+	isinstance
+	extract_function_features -> isinstance
+	isinstance
+	ord
+	extract_function_features -> ord
+	len
+	extract_function_features -> len
+	isinstance
+	isinstance
+	isinstance
+	isinstance
+	isinstance
+	isinstance
+	redirect -> render [color=red dir=both]
+	HttpResponse -> render [color=red dir=both]
+	HttpResponse -> redirect [color=red dir=both]
+	HttpResponse -> str [color=red dir=both]
+	render -> str [color=red dir=both]
+	redirect -> str [color=red dir=both]
+	analyze_code -> render [color=red dir=both]
+	analyze_code -> convert_to_vis_format [color=red dir=both]
+	convert_to_vis_format -> render [color=red dir=both]
+	render -> reversed [color=red dir=both]
+	isinstance -> ord [color=red dir=both]
+	isinstance -> len [color=red dir=both]
+	len -> ord [color=red dir=both]
+	login_user -> user_register [color=purple dir=both]
+	login_user -> main [color=purple dir=both]
+	login_user -> code_manage [color=purple dir=both]
+	login_user -> fault_propogation [color=purple dir=both]
+	login_user -> history [color=purple dir=both]
+	login_user -> search_history [color=purple dir=both]
+	login_user -> code_add [color=purple dir=both]
+	login_user -> code_update [color=purple dir=both]
+	login_user -> code_delete [color=purple dir=both]
+	login_user -> history_delete [color=purple dir=both]
+	login_user -> function_dependent [color=purple dir=both]
+	login_user -> history_search [color=purple dir=both]
+	login_user -> system [color=purple dir=both]
+	login_user -> new_pwd [color=purple dir=both]
+	login_user -> op_log [color=purple dir=both]
+	login_user -> log_delete [color=purple dir=both]
+	login_user -> look_code [color=purple dir=both]
+	login_user -> self_update [color=purple dir=both]
+	user_register -> main [color=purple dir=both]
+	user_register -> code_manage [color=purple dir=both]
+	user_register -> fault_propogation [color=purple dir=both]
+	user_register -> history [color=purple dir=both]
+	user_register -> search_history [color=purple dir=both]
+	user_register -> code_add [color=purple dir=both]
+	user_register -> code_update [color=purple dir=both]
+	user_register -> code_delete [color=purple dir=both]
+	user_register -> history_delete [color=purple dir=both]
+	user_register -> function_dependent [color=purple dir=both]
+	user_register -> history_search [color=purple dir=both]
+	user_register -> system [color=purple dir=both]
+	user_register -> new_pwd [color=purple dir=both]
+	user_register -> op_log [color=purple dir=both]
+	user_register -> log_delete [color=purple dir=both]
+	user_register -> look_code [color=purple dir=both]
+	user_register -> self_update [color=purple dir=both]
+	main -> code_manage [color=purple dir=both]
+	main -> fault_propogation [color=purple dir=both]
+	main -> history [color=purple dir=both]
+	main -> search_history [color=purple dir=both]
+	main -> code_add [color=purple dir=both]
+	main -> code_update [color=purple dir=both]
+	main -> function_dependent [color=purple dir=both]
+	main -> history_search [color=purple dir=both]
+	main -> system [color=purple dir=both]
+	main -> new_pwd [color=purple dir=both]
+	main -> op_log [color=purple dir=both]
+	main -> look_code [color=purple dir=both]
+	main -> self_update [color=purple dir=both]
+	code_manage -> fault_propogation [color=purple dir=both]
+	code_manage -> history [color=purple dir=both]
+	code_manage -> search_history [color=purple dir=both]
+	code_manage -> code_add [color=purple dir=both]
+	code_manage -> code_update [color=purple dir=both]
+	code_manage -> function_dependent [color=purple dir=both]
+	code_manage -> history_search [color=purple dir=both]
+	code_manage -> system [color=purple dir=both]
+	code_manage -> new_pwd [color=purple dir=both]
+	code_manage -> op_log [color=purple dir=both]
+	code_manage -> look_code [color=purple dir=both]
+	code_manage -> self_update [color=purple dir=both]
+	fault_propogation -> history [color=purple dir=both]
+	fault_propogation -> search_history [color=purple dir=both]
+	fault_propogation -> code_add [color=purple dir=both]
+	fault_propogation -> code_update [color=purple dir=both]
+	fault_propogation -> function_dependent [color=purple dir=both]
+	fault_propogation -> history_search [color=purple dir=both]
+	fault_propogation -> system [color=purple dir=both]
+	fault_propogation -> new_pwd [color=purple dir=both]
+	fault_propogation -> op_log [color=purple dir=both]
+	fault_propogation -> look_code [color=purple dir=both]
+	fault_propogation -> self_update [color=purple dir=both]
+	history -> search_history [color=purple dir=both]
+	history -> code_add [color=purple dir=both]
+	history -> code_update [color=purple dir=both]
+	history -> function_dependent [color=purple dir=both]
+	history -> history_search [color=purple dir=both]
+	history -> system [color=purple dir=both]
+	history -> new_pwd [color=purple dir=both]
+	history -> op_log [color=purple dir=both]
+	history -> look_code [color=purple dir=both]
+	history -> self_update [color=purple dir=both]
+	search_history -> code_add [color=purple dir=both]
+	search_history -> code_update [color=purple dir=both]
+	search_history -> function_dependent [color=purple dir=both]
+	search_history -> history_search [color=purple dir=both]
+	search_history -> system [color=purple dir=both]
+	search_history -> new_pwd [color=purple dir=both]
+	search_history -> op_log [color=purple dir=both]
+	search_history -> look_code [color=purple dir=both]
+	search_history -> self_update [color=purple dir=both]
+	code_add -> code_update [color=purple dir=both]
+	code_add -> code_delete [color=purple dir=both]
+	code_add -> history_delete [color=purple dir=both]
+	code_add -> function_dependent [color=purple dir=both]
+	code_add -> history_search [color=purple dir=both]
+	code_add -> system [color=purple dir=both]
+	code_add -> new_pwd [color=purple dir=both]
+	code_add -> op_log [color=purple dir=both]
+	code_add -> log_delete [color=purple dir=both]
+	code_add -> look_code [color=purple dir=both]
+	code_add -> self_update [color=purple dir=both]
+	code_update -> code_delete [color=purple dir=both]
+	code_update -> history_delete [color=purple dir=both]
+	code_update -> function_dependent [color=purple dir=both]
+	code_update -> history_search [color=purple dir=both]
+	code_update -> system [color=purple dir=both]
+	code_update -> new_pwd [color=purple dir=both]
+	code_update -> op_log [color=purple dir=both]
+	code_update -> log_delete [color=purple dir=both]
+	code_update -> look_code [color=purple dir=both]
+	code_update -> self_update [color=purple dir=both]
+	code_delete -> history_delete [color=purple dir=both]
+	code_delete -> new_pwd [color=purple dir=both]
+	code_delete -> log_delete [color=purple dir=both]
+	code_delete -> self_update [color=purple dir=both]
+	history_delete -> new_pwd [color=purple dir=both]
+	history_delete -> log_delete [color=purple dir=both]
+	function_dependent -> history_search [color=purple dir=both]
+	function_dependent -> system [color=purple dir=both]
+	function_dependent -> new_pwd [color=purple dir=both]
+	function_dependent -> op_log [color=purple dir=both]
+	function_dependent -> look_code [color=purple dir=both]
+	function_dependent -> self_update [color=purple dir=both]
+	history_search -> system [color=purple dir=both]
+	history_search -> new_pwd [color=purple dir=both]
+	history_search -> op_log [color=purple dir=both]
+	history_search -> look_code [color=purple dir=both]
+	history_search -> self_update [color=purple dir=both]
+	analyze_code -> extract_function_features [color=purple dir=both]
+	system -> new_pwd [color=purple dir=both]
+	system -> op_log [color=purple dir=both]
+	system -> look_code [color=purple dir=both]
+	system -> self_update [color=purple dir=both]
+	new_pwd -> op_log [color=purple dir=both]
+	new_pwd -> log_delete [color=purple dir=both]
+	new_pwd -> look_code [color=purple dir=both]
+	new_pwd -> self_update [color=purple dir=both]
+	op_log -> look_code [color=purple dir=both]
+	op_log -> self_update [color=purple dir=both]
+	look_code -> self_update [color=purple dir=both]
+}
